@@ -71,4 +71,12 @@ services:
     depends_on:
       - postgres-airflow
       - postgres-dbt
+  superset:
+    image: apache/superset:latest
+    restart: always
+    ports:
+      - "8090:8088"
+    depends_on:
+      - postgres-airflow
+      - postgres-dbt
 

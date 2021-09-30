@@ -1,0 +1,7 @@
+FROM apache/superset:latest
+
+#USER root
+#RUN mkdir -p /scripts
+#WORKDIR /scripts
+#COPY run.sh /scripts
+

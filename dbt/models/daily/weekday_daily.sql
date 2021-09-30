@@ -1,4 +1,4 @@
 SELECT *
 FROM
-    {{ ref('station_summary') }}
+    {{ source('instacart_raw_data', 'station_summary') }}
 GROUP BY ID

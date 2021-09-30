@@ -31,7 +31,7 @@ t1 = PostgresOperator(task_id='create_schema',
                      
 
 t8 = PostgresOperator(task_id='drop_table_station_summary',
-                      sql="DROP TABLE IF EXISTS aisles;",
+                      sql="DROP TABLE IF EXISTS station_summary;",
                       postgres_conn_id='dbt_postgres_instance_raw_data',
                       autocommit=True,
                       database="dbtdb",
